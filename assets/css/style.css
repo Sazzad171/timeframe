@@ -1,21 +1,59 @@
-.libre-caslon {
-  font-family: 'Libre Caslon Text', serif;
-}
-
 body {
   scroll-behavior: smooth;
-  color: #222222;
+  color: #888888;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  line-height: 26px;
 }
 
 a {
-  color: #222222;
+  color: #222222 !important;
 }
 
 a:hover {
   text-decoration: none;
   color: #222222;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 42px;
+  color: #222222;
+  font-family: 'Libre Caslon Text', serif;
+}
+
+h2 {
+  font-size: 32px;
+  color: #222222;
+  font-family: 'Libre Caslon Text', serif;
+}
+
+h3 {
+  font-size: 24px;
+  color: #222222;
+  font-family: 'Libre Caslon Text', serif;
+}
+
+h4 {
+  font-size: 18px;
+  color: #222222;
+}
+
+.btn {
+  border-radius: 2px;
+  color: #222222;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.btn:hover {
+  background: #222222;
+  color: #fff !important;
 }
 
 .btn:focus {
@@ -29,12 +67,36 @@ a:hover {
   border-color: #ADADAD;
 }
 
-p {
-  margin-bottom: 0;
+.border-solid-black {
+  border: 1px solid #222222;
+}
+
+.border-only-bottom {
+  border-bottom: 1px solid #999999;
+}
+
+.border-bottom-category-name {
+  border-bottom: 1px solid #777777;
+}
+
+.max-width-840 {
+  max-width: 840px;
+}
+
+.line-height-14 {
+  line-height: 14px;
+}
+
+.line-height-16 {
+  line-height: 16px;
+}
+
+.font-size-14 {
+  font-size: 14px;
 }
 
 .home-hero {
-  background: url("../images/home-hero-bg.svg");
+  background: url("../images/home-hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -48,16 +110,11 @@ p {
   width: 90%;
 }
 
-.home-hero .full-nav .nav-link {
-  color: #222222;
-}
-
 .home-hero .full-nav .nav-search {
   color: #FAFAFA;
   background: #222222;
   padding: 6px 0;
   margin-top: 2px;
-  border-radius: 100%;
   cursor: pointer;
 }
 
@@ -71,17 +128,6 @@ p {
   width: 200px;
 }
 
-.home-hero .full-nav .nav-search .hidden-search .btn {
-  border: 1px solid #222222;
-  color: #222222;
-  background: #fff;
-}
-
-.home-hero .full-nav .nav-search .hidden-search .btn:hover {
-  background: #222222;
-  color: #fff;
-}
-
 .home-hero .full-nav .nav-search #hiddenSeacrh {
   display: none;
 }
@@ -90,27 +136,17 @@ p {
   padding: 60px 0 75px;
 }
 
-.home-hero .hero-middle .container {
-  max-width: 840px;
-}
-
 .home-hero .hero-middle .heading {
   line-height: 58px;
   font-size: 41px;
 }
 
-.home-hero .hero-middle .social-icon li {
-  display: inline-block;
-}
-
 .home-hero .hero-middle .social-icon li a {
-  display: block;
   font-size: 15px;
-  color: #FAFAFA;
+  color: #FAFAFA !important;
   height: 35px;
   width: 35px;
   background: #333333;
-  text-align: center;
   border-radius: 50px;
   margin: 5px;
   line-height: 34px;
@@ -120,28 +156,17 @@ p {
   padding: 60px 0;
 }
 
-.home-trending-post .container {
-  max-width: 840px;
-}
-
-.home-trending-post .heading {
-  font-size: 32px;
-  line-height: 32px;
-}
-
 .home-trending-post .heading span {
   padding-bottom: 5px;
-  border-bottom: 1px solid #999999;
 }
 
 .home-trending-post .single-post .category-name {
   font-size: 13px;
-  line-height: 14px;
   margin: 20px 0;
 }
 
 .home-trending-post .single-post .category-name a {
-  color: #999999;
+  color: #999999 !important;
 }
 
 .home-trending-post .single-post .category-name span {
@@ -149,35 +174,25 @@ p {
   padding-bottom: 4px;
 }
 
-.home-trending-post .single-post .title {
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.home-trending-post .single-post .description {
-  line-height: 25px;
+.home-trending-post .single-post .post-description {
   color: #999999;
 }
 
-.home-trending-post .single-post .time-date i {
+.home-trending-post .single-post .post-meta i {
   color: #222222;
   margin-right: 2px;
 }
 
-.home-trending-post .single-post .time-date span {
-  font-size: 14px;
-  line-height: 14px;
+.home-trending-post .single-post .post-meta span {
   color: #999999;
 }
 
 .home-insta-profile .heading {
-  font-size: 32px;
   line-height: 32px;
 }
 
 .home-insta-profile .heading span {
   padding-bottom: 5px;
-  border-bottom: 1px solid #999999;
 }
 
 .home-insta-profile .all-post {
@@ -188,7 +203,7 @@ p {
   background: #FAFAFA;
 }
 
-.footer .top {
+.footer .top-footer {
   padding: 45px 0;
 }
 
@@ -197,7 +212,6 @@ p {
 }
 
 .footer .footer-nav a {
-  color: #222222;
   font-size: 18px;
   line-height: 18px;
   margin: 0 2px;
@@ -210,7 +224,7 @@ p {
 .footer .social-icon li a {
   display: block;
   font-size: 15px;
-  color: #FAFAFA;
+  color: #FAFAFA !important;
   height: 37px;
   width: 37px;
   background: #000;
@@ -220,18 +234,17 @@ p {
   line-height: 37px;
 }
 
-.footer .bottom {
+.footer .bottom-footer {
   border-top: 1px solid #DEDEDE;
 }
 
-.footer .bottom p {
-  font-size: 14px;
+.footer .bottom-footer p {
   line-height: 15px;
   color: #ADADAD;
 }
 
-.footer .bottom p a {
-  color: #ADADAD;
+.footer .bottom-footer p a {
+  color: #ADADAD !important;
 }
 
 .home2-full-navbar .nav-logo {
@@ -267,8 +280,6 @@ p {
 
 .home2-hero .text-part .inner .category-name {
   font-size: 13px;
-  line-height: 14px;
-  color: #999999;
   margin: 20px 0;
 }
 
@@ -277,24 +288,20 @@ p {
   padding-bottom: 4px;
 }
 
-.home2-hero .text-part .inner .title {
-  font-size: 24px;
-  line-height: 34px;
+.home2-hero .text-part .inner .category-name span a {
+  color: #999999 !important;
 }
 
-.home2-hero .text-part .inner .description {
-  line-height: 25px;
+.home2-hero .text-part .inner .post-description {
   color: #999999;
 }
 
-.home2-hero .text-part .inner .time-date i {
+.home2-hero .text-part .inner .post-meta i {
   color: #222222;
   margin-right: 2px;
 }
 
-.home2-hero .text-part .inner .time-date span {
-  font-size: 14px;
-  line-height: 14px;
+.home2-hero .text-part .inner .post-meta span {
   color: #999999;
 }
 
@@ -310,10 +317,6 @@ p {
   padding: 2rem 0 1rem;
 }
 
-.home2-single-post .container {
-  max-width: 840px;
-}
-
 .home2-single-post .text-part {
   background: #fff;
   padding: 25px 30px;
@@ -323,34 +326,24 @@ p {
 
 .home2-single-post .text-part .category-name {
   font-size: 13px;
-  line-height: 14px;
   margin: 20px 0;
 }
 
 .home2-single-post .text-part .category-name span {
-  border-bottom: 1px solid #777777;
   padding-bottom: 4px;
   color: #999999;
 }
 
-.home2-single-post .text-part .title {
-  font-size: 24px;
-  line-height: 34px;
-}
-
-.home2-single-post .text-part .description {
-  line-height: 25px;
+.home2-single-post .text-part .post-description {
   color: #999999;
 }
 
-.home2-single-post .text-part .time-date i {
+.home2-single-post .text-part .post-meta i {
   color: #222222;
   margin-right: 2px;
 }
 
-.home2-single-post .text-part .time-date span {
-  font-size: 14px;
-  line-height: 14px;
+.home2-single-post .text-part .post-meta span {
   color: #999999;
 }
 
@@ -366,14 +359,8 @@ p {
   margin-top: 2rem;
 }
 
-.home2-insta-profile .heading {
-  font-size: 32px;
-  line-height: 32px;
-}
-
 .home2-insta-profile .heading span {
   padding-bottom: 5px;
-  border-bottom: 1px solid #999999;
 }
 
 .home2-insta-profile .all-post {
@@ -388,18 +375,18 @@ p {
   padding: 50px 65px 38px;
 }
 
-.single-post-page .text-part .title {
+.single-post-page .text-part .post-title {
   font-size: 30px;
   line-height: 46px;
 }
 
-.single-post-page .text-part .date-writter-category span {
+.single-post-page .text-part .post-meta span {
   font-size: 14px;
   line-height: 14px;
   color: #999999;
 }
 
-.single-post-page .text-part .description {
+.single-post-page .text-part .post-description {
   font-size: 15px;
   line-height: 26px;
   color: #888888;
@@ -407,16 +394,16 @@ p {
 
 .single-post-page .text-part .quotes {
   margin: 2.5rem 0;
-  padding: 25px 40px;
+  padding: 35px 40px 25px;
   background: #f8f8f8;
 }
 
-.single-post-page .text-part .quotes .quotes-text-part .text {
+.single-post-page .text-part .quotes .quotes-text .text {
   font-size: 24px;
   line-height: 2rem;
 }
 
-.single-post-page .text-part .quotes .quotes-text-part i {
+.single-post-page .text-part .quotes .quotes-text i {
   font-size: 2rem;
 }
 

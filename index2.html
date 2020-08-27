@@ -15,59 +15,71 @@
 </head>
 <body>
   <!-- full navbar start -->
-  <section class="home2-full-navbar">
+  <header class="home2-full-navbar">
     <div class="container">
       <div class="nav-logo text-center">
         <a href="./index2.html" class="logo mb-0">
-          <img src="assets/images/logo.svg" alt="">
+          <img src="assets/images/logo.png" alt="">
         </a>
       </div>
       <div class="nav-menu-all">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="./index2.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Category</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Author</a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+              <div class="dropdown-menu border-0 rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./index.html">Home One</a>
+                <a class="dropdown-item" href="./index2.html">Home Two</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Author</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+              <div class="dropdown-menu border-0 rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./inner-page.html">Single Post</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
-  </section>
+  </header>
   <!-- full navbar end -->
 
   <!-- home2 hero start -->
   <section class="home2-hero">
     <div class="container">
-      <div class="image-part">
-        <img src="assets/images/home2-hero.svg" alt="" class="img-fluid">
-      </div>
+      <a href="./inner-page.html">
+        <img src="assets/images/home2-hero.jpg" alt="" class="img-fluid">
+      </a>
       <div class="text-part justify-content-center d-flex">
         <div class="inner text-center">
-          <p class="category-name text-uppercase">
-            <span>PHOTOGRAPHY</span>
+          <p class="category-name text-uppercase line-height-14">
+            <span class="border-bottom-category-name"><a href="#">Photography</a></span>
           </p>
-          <h4 class="title libre-caslon">
+          <h3 class="post-title">
             <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit Termano Incom nuld</a>
-          </h4>
-          <p class="description mb-3">
+          </h3>
+          <p class="post-description mb-3">
             Lorem ipsum dolor amet, consectetur adipisg. <br>
             neron euismod adipiscing et vel. Adipiscing posuere
           </p>
-          <p class="time-date mb-3">
+          <p class="post-meta mb-3">
             <i class="fas fa-calendar-alt"></i>
-            <span class="mr-3">06/12/18</span>
+            <span class="mr-3 line-height-14">06/12/18</span>
             <i class="fas fa-clock"></i>
-            <span>10 Min To Read</span>
+            <span class="font-size-14">10 Min To Read</span>
           </p>
           <button class="btn"> <a href="./inner-page.html">Read More <i class="fas fa-arrow-right"></i></a> </button>
         </div>
@@ -78,102 +90,102 @@
 
   <!-- single post start -->
   <section class="home2-single-post">
-    <div class="container">
+    <div class="container max-width-840">
       <div class="row mb-5">
         <div class="col-md-6">
-          <div class="post-img text-center">
-            <a href="#">
-              <img src="assets/images/trending-post-1.svg" alt="" class="img-fluid">
+          <div class="text-center">
+            <a href="./inner-page.html">
+              <img src="assets/images/trending-post-1.jpg" alt="" class="img-fluid">
             </a>
           </div>
         </div>
         <div class="col-md-6 p-md-0">
           <div class="text-part text-center">
-            <p class="category-name text-uppercase">
+            <p class="category-name text-uppercase line-height-14">
               <a href="#">
-                <span>PHOTOGRAPHY</span>
+                <span class="border-bottom-category-name">PHOTOGRAPHY</span>
               </a>
             </p>
-            <h4 class="title libre-caslon">
-              <a href="#">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit Termano Incom nuld</a>
-            </h4>
-            <p class="description mb-3">
+            <h3 class="post-title">
+              <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit Termano Incom nuld</a>
+            </h3>
+            <p class="post-description mb-3">
               Lorem ipsum dolor amet, consectetur adipisg. <br>
               neron euismod adipiscing et vel. Adipiscing posuere
             </p>
-            <p class="time-date mb-3">
-              <i class="fas fa-calendar-alt"></i>
+            <p class="post-meta mb-3">
+              <i class="fas fa-calendar-alt line-height-14 font-size-14"></i>
               <span class="mr-3">06/12/18</span>
               <i class="fas fa-clock"></i>
-              <span>10 Min To Read</span>
+              <span class="line-height-14 font-size-14">10 Min To Read</span>
             </p>
-            <button class="btn">Read More <i class="fas fa-arrow-right"></i> </button>
+            <button class="btn"> <a href="./inner-page.html">Read More <i class="fas fa-arrow-right"></i></a> </button>
           </div>
         </div>
       </div>
 
       <div class="row mb-5">
         <div class="col-md-6">
-          <div class="post-img text-center">
-            <a href="#">
-              <img src="assets/images/trending-post-2.svg" alt="" class="img-fluid">
+          <div class="text-center">
+            <a href="./inner-page.html">
+              <img src="assets/images/trending-post-2.jpg" alt="" class="img-fluid">
             </a>
           </div>
         </div>
         <div class="col-md-6 p-md-0">
           <div class="text-part text-center">
-            <p class="category-name text-uppercase">
+            <p class="category-name text-uppercase line-height-14">
               <a href="#">
-                <span>PHOTOGRAPHY</span>
+                <span class="border-bottom-category-name">PHOTOGRAPHY</span>
               </a>
             </p>
-            <h4 class="title libre-caslon">
-              <a href="#">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit Termano Incom nuld</a>
-            </h4>
-            <p class="description mb-3">
+            <h3 class="post-title">
+              <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit Termano Incom nuld</a>
+            </h3>
+            <p class="post-description mb-3">
               Lorem ipsum dolor amet, consectetur adipisg. <br>
               neron euismod adipiscing et vel. Adipiscing posuere
             </p>
-            <p class="time-date mb-3">
+            <p class="post-meta mb-3">
               <i class="fas fa-calendar-alt"></i>
-              <span class="mr-3">06/12/18</span>
+              <span class="mr-3 line-height-14 font-size-14">06/12/18</span>
               <i class="fas fa-clock"></i>
-              <span>10 Min To Read</span>
+              <span class="line-height-14 font-size-14">10 Min To Read</span>
             </p>
-            <button class="btn">Read More <i class="fas fa-arrow-right"></i> </button>
+            <button class="btn"> <a href="./inner-page.html">Read More <i class="fas fa-arrow-right"></i></a> </button>
           </div>
         </div>
       </div>
 
       <div class="row mb-5">
         <div class="col-md-6">
-          <div class="post-img text-center">
-            <a href="#">
-              <img src="assets/images/trending-post-3.svg" alt="" class="img-fluid">
+          <div class="text-center">
+            <a href="./inner-page.html">
+              <img src="assets/images/trending-post-3.jpg" alt="" class="img-fluid">
             </a>
           </div>
         </div>
         <div class="col-md-6 p-md-0">
           <div class="text-part text-center">
-            <p class="category-name text-uppercase">
+            <p class="category-name text-uppercase line-height-14">
               <a href="#">
-                <span>PHOTOGRAPHY</span>
+                <span class="border-bottom-category-name">PHOTOGRAPHY</span>
               </a>
             </p>
-            <h4 class="title libre-caslon">
-              <a href="#">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit Termano Incom nuld</a>
-            </h4>
-            <p class="description mb-3">
+            <h3 class="post-title">
+              <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit Termano Incom nuld</a>
+            </h3>
+            <p class="post-description mb-3">
               Lorem ipsum dolor amet, consectetur adipisg. <br>
               neron euismod adipiscing et vel. Adipiscing posuere
             </p>
-            <p class="time-date mb-3">
+            <p class="post-meta mb-3">
               <i class="fas fa-calendar-alt"></i>
-              <span class="mr-3">06/12/18</span>
+              <span class="mr-3 line-height-14 font-size-14">06/12/18</span>
               <i class="fas fa-clock"></i>
-              <span>10 Min To Read</span>
+              <span class="line-height-14 font-size-14">10 Min To Read</span>
             </p>
-            <button class="btn">Read More <i class="fas fa-arrow-right"></i> </button>
+            <button class="btn"> <a href="./inner-page.html">Read More <i class="fas fa-arrow-right"></i></a> </button>
           </div>
         </div>
       </div>
@@ -185,7 +197,7 @@
   <section class="home2-insta-profile">
     <div class="container-fluid">
       <h2 class="heading text-center">
-        <span class="inner libre-caslon">Instagram Post</span>
+        <span class="inner border-only-bottom">Instagram Post</span>
       </h2>
       <div class="row all-post">
         <div class="elfsight-app-e1692816-df85-4d62-9d61-186bd10c4cf8"></div>
@@ -195,31 +207,31 @@
   <!-- insta image end -->
 
   <!-- footer start -->
-  <section class="footer">
+  <footer class="footer">
     <div class="container text-center">
-      <div class="top">
-        <p class="big-logo mb-0">
-          <a href="./index.html">
-            <img src="assets/images/logo.svg" alt="">
-          </a>
-        </p>
-        <ul class="nav justify-content-center footer-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Category</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Author</a>
-          </li>
-        </ul>
+      <div class="top-footer">
+        <a href="./index.html">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+        <nav>
+          <ul class="nav justify-content-center footer-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Author</a>
+            </li>
+          </ul>
+        </nav>
         <div class="social-icon text-center">
           <ul class="list-unstyled mb-0">
             <li>
@@ -238,12 +250,12 @@
         </div>
       </div>
     </div>
-    <div class="bottom">
-      <p class="text-center p-4">
+    <div class="bottom-footer">
+      <p class="text-center p-4 font-size-14">
         Designed By <a href="https://themefisher.com/">Themefisher</a> Developed by <a href="#">Get Hugo</a>
       </p>
     </div>
-  </section>
+  </footer>
   <!-- footer end -->
   
   <!-- bootstrap js -->

@@ -15,48 +15,58 @@
 </head>
 <body>
   <!-- full navbar start -->
-  <section class="home2-full-navbar">
+  <header class="home2-full-navbar">
     <div class="container">
       <div class="nav-logo text-center">
         <a href="./index2.html" class="logo mb-0">
-          <img src="assets/images/logo.svg" alt="">
+          <img src="assets/images/logo.png" alt="">
         </a>
       </div>
       <div class="nav-menu-all">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="./index2.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Category</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Author</a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+              <div class="dropdown-menu border-0 rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./index.html">Home One</a>
+                <a class="dropdown-item" href="./index2.html">Home Two</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Author</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+              <div class="dropdown-menu border-0 rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./inner-page.html">Single Post</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
-  </section>
+  </header>
   <!-- full navbar end -->
 
   <!-- single-post start -->
   <section class="single-post-page">
     <div class="container">
-      <div class="image-part">
-        <img src="assets/images/single-post-page-img.svg" alt="" class="img-fluid">
-      </div>
+      <img src="assets/images/single-post-page-img.jpg" alt="" class="img-fluid">
       <div class="text-part">
-        <h4 class="title libre-caslon">
+        <h4 class="post-title">
           Customer Engagement Marketing: A New Marketing
           Strategy for Economy Structure For the Everyone. 
         </h4>
-        <p class="date-writter-category mb-4 mt-3">
+        <p class="post-meta mb-4 mt-3">
           <i class="fas fa-calendar-alt mr-1"></i>
           <span class="mr-3">06/12/18</span>
           <i class="fas fa-pen-alt mr-1"></i>
@@ -64,16 +74,16 @@
           <i class="fas fa-th-list mr-1"></i>
           <span class="mr-3">Photography</span>
         </p>
-        <p class="description">
+        <p class="post-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec et ipsum ullamcorper venenatis fringilla. Pretium, purus eu nec vulputate vel habitant egestas. Congue ornare at ipsum, viverra. Vitae magna faucibus eros, lectus sociis. Etiam nunc amet id dignissim. Feugiat id tempor vel sit in ornare turpis posuere. Eu quisque integer non rhoncus elementum vel. Quis nec viverra lectus augue nec praesent volutpat tortor. Ipsum eget sed tempus luctus nisl. Ut etiam molestie mattis at faucibus mi at pellentesque. Pellentesque morbi nunc, curabitur arcu euismod suscipit. Duis mi sapien, nisl, pulvinar donec non dictum nibh fusce. Pharetra id nullam <br> et ac purus.
           Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis cursus id. <br>
           Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget pharetra odio amet pellentesque. Egestas nisi adipiscing sed in lectus. Vitae ultrices malesuada aliquet dignissim. Faucibus non tristique eu.
           Faucibus consectetur tempus adipiscing vitae. Nec blandit tincidunt nibh nisi, quam volutpat. In lacus laoreet diam risus. Mauris, risus faucibus sagittis sagittis tincidunt id justo. Diam massa pretium consequat mauris viverra. Sagittis eu libero 
         </p>
         <div class="quotes">
-          <h5 class="quotes-text-part">
+          <h5 class="quotes-text">
             <sup><i class="fas fa-quote-left"></i></sup>
-            <span class="libre-caslon text">
+            <span class="text">
               A wise girls  her limit to touch sky.Repellat neque 
               praesentium adipisci.The me an idea, so I  as quickly.
             </span>
@@ -83,7 +93,7 @@
             -Andrew Saymond
           </h6>
         </div>
-        <p class="description">
+        <p class="post-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec et ipsum ullamcorper venenatis fringilla. Pretium, purus eu nec vulputate vel habitant egestas. Congue ornare at ipsum, viverra. Vitae magna faucibus eros, lectus sociis. Etiam nunc amet id dignissim. Feugiat id tempor vel sit in ornare turpis posuere. Eu quisque integer non rhoncus elementum vel. Quis nec viverra lectus augue nec praesent volutpat tortor. Ipsum eget sed tempus luctus nisl. Ut etiam molestie mattis at faucibus mi at pellentesque. Pellentesque morbi nunc, curabitur arcu euismod suscipit. Duis mi sapien, nisl, pulvinar donec non dictum <br> <br>
 
           Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis cursus id.
@@ -92,6 +102,9 @@
       </div>
 
       <div class="comments-reply">
+        <div class="no-commnets">
+          <span class="text">no comments</span>
+        </div>
         
       </div>
     </div>
@@ -104,7 +117,7 @@
   <section class="home2-insta-profile">
     <div class="container-fluid">
       <h2 class="heading text-center">
-        <span class="inner libre-caslon">Instagram Post</span>
+        <span class="inner">Instagram Post</span>
       </h2>
       <div class="row all-post">
         <div class="elfsight-app-e1692816-df85-4d62-9d61-186bd10c4cf8"></div>
@@ -114,31 +127,31 @@
   <!-- insta image end -->
 
   <!-- footer start -->
-  <section class="footer">
+  <footer class="footer">
     <div class="container text-center">
-      <div class="top">
-        <p class="big-logo mb-0">
-          <a href="./index.html">
-            <img src="assets/images/logo.svg" alt="">
-          </a>
-        </p>
-        <ul class="nav justify-content-center footer-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index2.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Category</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Author</a>
-          </li>
-        </ul>
+      <div class="top-footer">
+        <a href="./index.html">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+        <nav>
+          <ul class="nav justify-content-center footer-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Author</a>
+            </li>
+          </ul>
+        </nav>
         <div class="social-icon text-center">
           <ul class="list-unstyled mb-0">
             <li>
@@ -157,12 +170,12 @@
         </div>
       </div>
     </div>
-    <div class="bottom">
-      <p class="text-center p-4">
+    <div class="bottom-footer">
+      <p class="text-center p-4 font-size-14">
         Designed By <a href="https://themefisher.com/">Themefisher</a> Developed by <a href="#">Get Hugo</a>
       </p>
     </div>
-  </section>
+  </footer>
   <!-- footer end -->
   
   <!-- bootstrap js -->

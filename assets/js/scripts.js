@@ -8,4 +8,4 @@ $(document).ready(function(){
 // remove instagram tag
   setTimeout(function(){ 
     document.getElementsByClassName("eapps-link")[0].style.display = "none";
-  }, 2000);
+  }, 4000);

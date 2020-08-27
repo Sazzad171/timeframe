@@ -21,7 +21,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-md navbar-light p-3">
           <a class="navbar-brand" href="index.html"> 
-            <img class="img-fluid" src="assets/images/logo.svg" alt="">
+            <img class="img-fluid" src="assets/images/logo.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,8 +29,14 @@
             
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link mr-3" href="./index.html">Home</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link mr- dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Home
+                </a>
+                <div class="dropdown-menu border-0 rounded-0" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./index.html">Home One</a>
+                  <a class="dropdown-item" href="./index2.html">Home Two</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link mr-4" href="#">About</a>
@@ -44,8 +50,16 @@
               <li class="nav-item">
                 <a class="nav-link mr-4" href="#">Author</a>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link mr-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pages                
+                </a>
+                <div class="dropdown-menu border-0 rounded-0" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./inner-page.html">Single Post</a>
+                </div>
+              </li>
               <li class="nav-item">
-                <div class="position-relative d-block nav-search">
+                <div class="position-relative d-block nav-search rounded-circle">
                   <span id="showHideSearch" class="search-btn">
                     <i class="fas fa-search"></i>
                   </span>  
@@ -55,7 +69,7 @@
                       <div class="input-group">
                         <input type="text" class="form-control rounded-0" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                          <button class="btn rounded-0" type="button">Search</button>
+                          <button class="btn rounded-0 border-solid-black" type="button">Search</button>
                         </div>
                       </div>
                     </div>
@@ -72,24 +86,24 @@
 
     <!-- hero middle part start -->
     <div class="hero-middle">
-      <div class="container">
-        <h1 class="heading libre-caslon text-center mb-4">I’m a Freelance Interactive Art Director
+      <div class="container max-width-840">
+        <h1 class="heading text-center mb-4">I’m a Freelance Interactive Art Director
            based in Cuba. Focus across branding
             identity and solution In Society
         </h1>
         <div class="social-icon text-center">
           <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#"><i class="fab fa-facebook"></i> </a>
+            <li class="d-inline-block">
+              <a href="#" class="d-block text-center"><i class="fab fa-facebook"></i> </a>
             </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
+            <li class="d-inline-block">
+              <a href="#" class="d-block text-center"><i class="fab fa-twitter"></i></a>
             </li>
-            <li>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <li class="d-inline-block">
+              <a href="#" class="d-block text-center"><i class="fab fa-linkedin-in"></i></a>
             </li>
-            <li>
-              <a href="#"><i class="fab fa-skype"></i></a>
+            <li class="d-inline-block">
+              <a href="#" class="d-block text-center"><i class="fab fa-skype"></i></a>
             </li>
           </ul>
         </div>
@@ -101,111 +115,111 @@
 
   <!-- trending post start -->
   <section class="home-trending-post">
-    <div class="container text-center">
+    <div class="container text-center max-width-840">
       <h2 class="heading">
-        <span class="inner libre-caslon">Trending Post</span>
+        <span class="inner border-only-bottom">Trending Post</span>
       </h2>
       <div class="row all-post mt-5">
         <div class="col-md-6">
           <div class="single-post mb-4">
             <a href="./inner-page.html">
-              <img src="assets/images/trending-post-1.svg" alt="" class="img-fluid">
+              <img src="assets/images/trending-post-1.jpg" alt="" class="img-fluid">
             </a>
-            <p class="category-name">
+            <p class="category-name line-height-14">
               <a href="#">
                 <span class="text-uppercase">photography</span>
               </a>
             </p>
-            <h4 class="title libre-caslon">
+            <h3 class="post-title">
               <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
-            </h4>
-            <p class="description mb-3">
+            </h3>
+            <p class="post-description mb-3">
               Lorem ipsum dolor amet, consectetur adipisg. <br>
               neron euismod adipiscing et vel. Adipiscing posuere
             </p>
-            <p class="time-date">
+            <p class="post-meta">
               <i class="fas fa-calendar-alt"></i>
-              <span class="mr-3">06/12/18</span>
+              <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
               <i class="fas fa-clock"></i>
-              <span>10 Min To Read</span>
+              <span class="font-size-14 line-height-14">10 Min To Read</span>
             </p>
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="single-post mb-4">
-            <a href="#">
-              <img src="assets/images/trending-post-2.svg" alt="" class="img-fluid">
+            <a href="./inner-page.html">
+              <img src="assets/images/trending-post-2.jpg" alt="" class="img-fluid">
             </a>
-            <p class="category-name">
+            <p class="category-name line-height-14">
               <a href="#">
                 <span class="text-uppercase">photography</span>
               </a>
             </p>
-            <h4 class="title libre-caslon">
-              <a href="#">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
-            </h4>
-            <p class="description mb-3">
+            <h3 class="post-title">
+              <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
+            </h3>
+            <p class="post-description mb-3">
               Lorem ipsum dolor amet, consectetur adipisg. <br>
               neron euismod adipiscing et vel. Adipiscing posuere
             </p>
-            <p class="time-date">
+            <p class="post-meta">
               <i class="fas fa-calendar-alt"></i>
-              <span class="mr-3">06/12/18</span>
+              <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
               <i class="fas fa-clock"></i>
-              <span>10 Min To Read</span>
+              <span class="font-size-14 line-height-14">10 Min To Read</span>
             </p>
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="single-post mb-4">
-            <a href="#">
-              <img src="assets/images/trending-post-3.svg" alt="" class="img-fluid">
+            <a href="./inner-page.html">
+              <img src="assets/images/trending-post-3.jpg" alt="" class="img-fluid">
             </a>
-            <p class="category-name">
+            <p class="category-name line-height-14">
               <a href="#">
                 <span class="text-uppercase">photography</span>
               </a>
             </p>
-            <h4 class="title libre-caslon">
-              <a href="#">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
-            </h4>
-            <p class="description mb-3">
+            <h3 class="post-title">
+              <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
+            </h3>
+            <p class="post-description mb-3">
               Lorem ipsum dolor amet, consectetur adipisg. <br>
               neron euismod adipiscing et vel. Adipiscing posuere
             </p>
-            <p class="time-date">
+            <p class="post-meta">
               <i class="fas fa-calendar-alt"></i>
-              <span class="mr-3">06/12/18</span>
+              <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
               <i class="fas fa-clock"></i>
-              <span>10 Min To Read</span>
+              <span class="font-size-14 line-height-14">10 Min To Read</span>
             </p>
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="single-post mb-4">
-            <a href="#">
-              <img src="assets/images/trending-post-4.svg" alt="" class="img-fluid">
+            <a href="./inner-page.html">
+              <img src="assets/images/trending-post-4.jpg" alt="" class="img-fluid">
             </a>
-            <p class="category-name">
+            <p class="category-name line-height-14">
               <a href="#">
                 <span class="text-uppercase">photography</span>
               </a>
             </p>
-            <h4 class="title libre-caslon">
-              <a href="#">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
-            </h4>
-            <p class="description mb-3">
+            <h3 class="post-title">
+              <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
+            </h3>
+            <p class="post-description mb-3">
               Lorem ipsum dolor amet, consectetur adipisg. <br>
               neron euismod adipiscing et vel. Adipiscing posuere
             </p>
-            <p class="time-date">
+            <p class="post-meta">
               <i class="fas fa-calendar-alt"></i>
-              <span class="mr-3">06/12/18</span>
+              <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
               <i class="fas fa-clock"></i>
-              <span>10 Min To Read</span>
+              <span class="font-size-14 line-height-14">10 Min To Read</span>
             </p>
           </div>
         </div>
@@ -218,7 +232,7 @@
   <section class="home-insta-profile">
     <div class="container-fluid">
       <h2 class="heading text-center">
-        <span class="inner libre-caslon">Instagram Post</span>
+        <span class="inner border-only-bottom">Instagram Post</span>
       </h2>
       <div class="row all-post">
         <div class="elfsight-app-e1692816-df85-4d62-9d61-186bd10c4cf8"></div>
@@ -228,31 +242,31 @@
   <!-- insta image end -->
 
   <!-- footer start -->
-  <section class="footer">
+  <footer class="footer">
     <div class="container text-center">
-      <div class="top">
-        <p class="big-logo mb-0">
-          <a href="./index2.html">
-            <img src="assets/images/logo.svg" alt="">
-          </a>
-        </p>
-        <ul class="nav justify-content-center footer-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Category</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Author</a>
-          </li>
-        </ul>
+      <div class="top-footer">
+        <a href="./index.html">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+        <nav>
+          <ul class="nav justify-content-center footer-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Author</a>
+            </li>
+          </ul>
+        </nav>
         <div class="social-icon text-center">
           <ul class="list-unstyled mb-0">
             <li>
@@ -271,12 +285,12 @@
         </div>
       </div>
     </div>
-    <div class="bottom">
-      <p class="text-center p-4">
+    <div class="bottom-footer">
+      <p class="text-center p-4 font-size-14">
         Designed By <a href="https://themefisher.com/">Themefisher</a> Developed by <a href="#">Get Hugo</a>
       </p>
     </div>
-  </section>
+  </footer>
   <!-- footer end -->
   
   <!-- bootstrap js -->
