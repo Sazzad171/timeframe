@@ -8,6 +8,7 @@ body {
 
 a {
   color: #222222 !important;
+  text-decoration: none;
 }
 
 a:hover {
@@ -45,13 +46,6 @@ h4 {
 }
 
 .btn {
-  border-radius: 2px;
-  color: #222222;
-  background: #fff;
-  border: 1px solid #000;
-}
-
-.btn:hover {
   background: #222222;
   color: #fff !important;
 }
@@ -61,10 +55,52 @@ h4 {
           box-shadow: none;
 }
 
+form .btn {
+  border-radius: 2px;
+  border: 1px solid #000;
+}
+
+form .btn:hover {
+  color: #222222 !important;
+  background: #fff;
+}
+
+.form-control {
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+}
+
 .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-color: #ADADAD;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #999999;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #999999;
+}
+
+.form-control::placeholder {
+  color: #999999;
+}
+
+.form-check-input[type=checkbox] {
+  border-radius: 0;
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.form-check-input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .border-solid-black {
@@ -77,10 +113,6 @@ h4 {
 
 .border-bottom-category-name {
   border-bottom: 1px solid #777777;
-}
-
-.max-width-840 {
-  max-width: 840px;
 }
 
 .line-height-14 {
@@ -96,25 +128,31 @@ h4 {
 }
 
 .dropdown-item:active {
-  background-color: none !important;
+  background-color: #fff !important;
 }
 
-.home-hero {
+.comment-heading {
+  color: #666666;
+  line-height: 18px;
+  font-weight: 450;
+}
+
+.home-banner {
   background: url("../images/home-hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.home-hero .full-nav .container {
+.home-banner .full-header .container {
   max-width: 1020px;
 }
 
-.home-hero .full-nav .navbar-brand .img-fluid {
+.home-banner .full-header .navbar-brand .img-fluid {
   width: 90%;
 }
 
-.home-hero .full-nav .nav-search {
+.home-banner .full-header .nav-search {
   color: #FAFAFA;
   background: #222222;
   padding: 6px 0;
@@ -122,30 +160,36 @@ h4 {
   cursor: pointer;
 }
 
-.home-hero .full-nav .nav-search .search-btn {
+.home-banner .full-header .nav-search .input-group {
+  background: #fff;
+  padding: 5px;
+}
+
+.home-banner .full-header .nav-search .search-btn {
   padding: 8px 11px;
 }
 
-.home-hero .full-nav .nav-search .hidden-search {
+.home-banner .full-header .nav-search .hidden-search {
   right: 0;
   top: 45px;
-  width: 200px;
+  width: 280px;
 }
 
-.home-hero .full-nav .nav-search #hiddenSeacrh {
+.home-banner .full-header .nav-search #hiddenSeacrh {
   display: none;
 }
 
-.home-hero .hero-middle {
+.home-banner .banner-inner {
   padding: 60px 0 75px;
 }
 
-.home-hero .hero-middle .heading {
+.home-banner .banner-inner .heading {
   line-height: 58px;
   font-size: 41px;
+  padding: 0 10rem;
 }
 
-.home-hero .hero-middle .social-icon li a {
+.home-banner .banner-inner .social-icon li a {
   font-size: 15px;
   color: #FAFAFA !important;
   height: 35px;
@@ -164,42 +208,42 @@ h4 {
   padding-bottom: 5px;
 }
 
-.home-trending-post .single-post .category-name {
+.home-trending-post .card .category-name {
   font-size: 13px;
-  margin: 20px 0;
+  margin: 4px 0 20px;
 }
 
-.home-trending-post .single-post .category-name a {
+.home-trending-post .card .category-name a {
   color: #999999 !important;
 }
 
-.home-trending-post .single-post .category-name span {
+.home-trending-post .card .category-name span {
   border-bottom: 1px solid #CBCBCB;
   padding-bottom: 4px;
 }
 
-.home-trending-post .single-post .post-description {
+.home-trending-post .card .post-description {
   color: #999999;
 }
 
-.home-trending-post .single-post .post-meta i {
+.home-trending-post .card .post-meta i {
   color: #222222;
   margin-right: 2px;
 }
 
-.home-trending-post .single-post .post-meta span {
+.home-trending-post .card .post-meta span {
   color: #999999;
 }
 
-.home-insta-profile .heading {
+.instagram-profile .heading {
   line-height: 32px;
 }
 
-.home-insta-profile .heading span {
+.instagram-profile .heading span {
   padding-bottom: 5px;
 }
 
-.home-insta-profile .all-post {
+.instagram-profile .all-post {
   margin: 1.5rem 0 4rem;
 }
 
@@ -251,178 +295,235 @@ h4 {
   color: #ADADAD !important;
 }
 
-.home2-full-navbar .nav-logo {
+.home2-full-header .nav-logo {
   padding: 30px 0;
 }
 
-.home2-full-navbar .nav-logo img {
+.home2-full-header .nav-logo img {
   width: 185px;
   height: auto;
 }
 
-.home2-full-navbar .nav-menu-all {
+.home2-full-header .nav-menu-all {
   margin-bottom: 25px;
 }
 
-.home2-full-navbar .nav-menu-all .nav-link {
+.home2-full-header .nav-menu-all .nav-link {
   margin: 0 2px;
 }
 
-.home2-hero .container {
+.home2-banner .container {
   max-width: 855px;
 }
 
-.home2-hero .text-part {
+.home2-banner .text-part {
   margin-top: -120px;
 }
 
-.home2-hero .text-part .inner {
+.home2-banner .text-part .inner {
   width: 615px;
   background: #fff;
   padding: 25px 70px;
 }
 
-.home2-hero .text-part .inner .category-name {
+.home2-banner .text-part .inner .category-name {
   font-size: 13px;
   margin: 20px 0;
 }
 
-.home2-hero .text-part .inner .category-name span {
-  border-bottom: 1px solid #777777;
+.home2-banner .text-part .inner .category-name span {
   padding-bottom: 4px;
 }
 
-.home2-hero .text-part .inner .category-name span a {
+.home2-banner .text-part .inner .category-name span a {
   color: #999999 !important;
 }
 
-.home2-hero .text-part .inner .post-description {
+.home2-banner .text-part .inner .post-description {
   color: #999999;
 }
 
-.home2-hero .text-part .inner .post-meta i {
+.home2-banner .text-part .inner .post-meta i {
   color: #222222;
   margin-right: 2px;
 }
 
-.home2-hero .text-part .inner .post-meta span {
+.home2-banner .text-part .inner .post-meta span {
   color: #999999;
 }
 
-.home2-hero .text-part .inner .btn {
+.home2-banner .text-part .inner .btn {
   color: #222222;
 }
 
-.home2-hero .text-part .inner .btn i {
+.home2-banner .text-part .inner .btn i {
   margin-left: 4px;
 }
 
-.home2-single-post {
+.home2-blogs {
   padding: 2rem 0 1rem;
 }
 
-.home2-single-post .text-part {
+.home2-blogs .container {
+  max-width: 840px;
+}
+
+.home2-blogs .text-part {
   background: #fff;
   padding: 25px 30px;
   margin-left: -120px;
   margin-top: 2rem;
 }
 
-.home2-single-post .text-part .category-name {
+.home2-blogs .text-part .category-name {
   font-size: 13px;
   margin: 20px 0;
 }
 
-.home2-single-post .text-part .category-name span {
+.home2-blogs .text-part .category-name span {
   padding-bottom: 4px;
   color: #999999;
 }
 
-.home2-single-post .text-part .post-description {
+.home2-blogs .text-part .post-title {
+  line-height: 34px;
+}
+
+.home2-blogs .text-part .post-description {
   color: #999999;
 }
 
-.home2-single-post .text-part .post-meta i {
+.home2-blogs .text-part .post-meta i {
   color: #222222;
   margin-right: 2px;
 }
 
-.home2-single-post .text-part .post-meta span {
+.home2-blogs .text-part .post-meta span {
   color: #999999;
 }
 
-.home2-single-post .text-part .btn {
-  color: #222222;
-}
-
-.home2-single-post .text-part .btn i {
+.home2-blogs .text-part .btn i {
   margin-left: 4px;
 }
 
-.home2-insta-profile {
-  margin-top: 2rem;
-}
-
-.home2-insta-profile .heading span {
-  padding-bottom: 5px;
-}
-
-.home2-insta-profile .all-post {
-  margin: 1.5rem 0 4rem;
-}
-
-.single-post-page .container {
+.blog-deatils-page .container {
   max-width: 900px;
 }
 
-.single-post-page .text-part {
+.blog-deatils-page .blog-body {
   padding: 50px 65px 38px;
 }
 
-.single-post-page .text-part .post-title {
+.blog-deatils-page .blog-body .post-title {
   font-size: 30px;
   line-height: 46px;
 }
 
-.single-post-page .text-part .post-meta span {
-  font-size: 14px;
-  line-height: 14px;
+.blog-deatils-page .blog-body .post-meta i {
+  color: #222222;
+}
+
+.blog-deatils-page .blog-body .post-meta span {
   color: #999999;
 }
 
-.single-post-page .text-part .post-description {
-  font-size: 15px;
-  line-height: 26px;
-  color: #888888;
-}
-
-.single-post-page .text-part .quotes {
-  margin: 2.5rem 0;
-  padding: 35px 40px 25px;
+.blog-deatils-page .blog-body .quotes {
+  margin: 2.5rem 0 2rem;
+  padding: 36px 70px 30px;
   background: #f8f8f8;
 }
 
-.single-post-page .text-part .quotes .quotes-text .text {
-  font-size: 24px;
-  line-height: 2rem;
+.blog-deatils-page .blog-body .quotes .quotes-text {
+  line-height: 32px;
 }
 
-.single-post-page .text-part .quotes .quotes-text i {
+.blog-deatils-page .blog-body .quotes .quotes-text i {
   font-size: 2rem;
 }
 
-.single-post-page .text-part .quotes .writter {
+.blog-deatils-page .blog-body .quotes .quotes-text .left-top-icon {
+  top: -8px;
+  left: -42px;
+}
+
+.blog-deatils-page .blog-body .quotes .quotes-text .right-bottom-icon {
+  bottom: -15px;
+  right: -32px;
+}
+
+.blog-deatils-page .blog-body .quotes .writter {
   color: #333333;
   font-size: 20px;
   line-height: 34px;
 }
 
+.blog-deatils-page .no-comments {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.blog-deatils-page .no-comments .text {
+  margin-bottom: -12px;
+}
+
+.blog-deatils-page .no-comments span {
+  background: #fff;
+}
+
+.blog-deatils-page .comments-reply {
+  padding: 2rem 0 1.4rem;
+}
+
+.blog-deatils-page .comments-reply form .form-check-label {
+  line-height: 17px;
+}
+
+.footer-blog-details .social-icon li a {
+  background: #e4e4e4;
+  color: #a5a5a5 !important;
+}
+
+.contact-form .container {
+  max-width: 900px;
+}
+
+.contact-form .heading {
+  line-height: 43px;
+  color: #003135;
+}
+
+.contact-form .form-group {
+  margin-bottom: 2rem;
+}
+
+.contact-form .form-group label {
+  color: #333333;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.contact-form .form-group .form-control {
+  border: none;
+  border-bottom: 1px solid #CBCBCB;
+  padding: 12px 0;
+}
+
+.contact-page-block {
+  padding: 40px;
+  border-top: 1px solid #CBCBCB;
+}
+
+@media (max-width: 991px) {
+  .home-banner .banner-inner .heading {
+    padding: 0;
+  }
+}
+
 @media (max-width: 767px) {
-  .home-hero .full-nav .nav-search {
+  .home-banner .full-header .nav-search {
     width: 33px;
     height: 33px;
   }
-  .home-hero .full-nav .nav-search .hidden-search {
+  .home-banner .full-header .nav-search .hidden-search {
     left: 0;
   }
   .home2-single-post .row {
@@ -434,22 +535,25 @@ h4 {
 }
 
 @media (max-width: 575px) {
-  .home-hero .hero-middle {
+  .home-banner .banner-inner {
     padding: 40px 0 40px;
   }
-  .home-hero .hero-middle .heading {
+  .home-banner .banner-inner .heading {
     font-size: 30px;
   }
-  .home2-hero .text-part {
+  .home2-banner .text-part {
     margin-top: 0;
   }
-  .home2-hero .text-part .inner {
+  .home2-banner .text-part .inner {
     padding: 25px 0px;
   }
-  .home2-full-navbar .nav-menu-all .nav-link {
+  .home2-full-header .nav-menu-all .nav-link {
     margin: 0;
   }
   .home2-single-post .text-part {
     padding: 25px 0;
+  }
+  .blog-deatils-page .blog-body {
+    padding: 0;
   }
 }

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timeframe | Home</title>
   <!-- bootstrap css -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/plugins/bootstrap/dist/css/bootstrap.min.css">
   <!-- google fonts -->
   <link href="assets/css/google-fonts.css" rel="stylesheet">
   <!-- fontawesome css -->
@@ -14,10 +14,10 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- full hero start -->
-  <section class="home-hero">
+  <!-- full full banner start -->
+  <section class="home-banner">
     <!-- navbar start -->
-    <div class="full-nav">
+    <div class="full-header">
       <div class="container">
         <nav class="navbar navbar-expand-md navbar-light p-3">
           <a class="navbar-brand" href="index.html"> 
@@ -29,8 +29,8 @@
             
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link mr- dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li class="nav-item mr-4 dropdown">
+                <a class="nav-link mr- dropdown-toggle" href="#" id="navbarDropdown" role="button" data-hover="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Home
                 </a>
                 <div class="dropdown-menu border-0 rounded-0" aria-labelledby="navbarDropdown">
@@ -45,17 +45,17 @@
                 <a class="nav-link mr-4" href="#">Category</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mr-4" href="#">Contact</a>
+                <a class="nav-link mr-4" href="./contact.html">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mr-4" href="#">Author</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link mr-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link mr-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
                   Pages                
                 </a>
                 <div class="dropdown-menu border-0 rounded-0" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="./inner-page.html">Single Post</a>
+                  <a class="dropdown-item" href="./blog-details.html">Blog Details</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -84,9 +84,9 @@
     </div>
     <!-- navbar end -->
 
-    <!-- hero middle part start -->
-    <div class="hero-middle">
-      <div class="container max-width-840">
+    <!-- banner inner part start -->
+    <div class="banner-inner">
+      <div class="container">
         <h1 class="heading text-center mb-4">I’m a Freelance Interactive Art Director
            based in Cuba. Focus across branding
             identity and solution In Society
@@ -109,118 +109,126 @@
         </div>
       </div>
     </div>
-    <!-- hero middle part end -->
+    <!-- banner inner part end -->
   </section>
-  <!-- full hero end -->
+  <!-- full banner end -->
 
   <!-- trending post start -->
   <section class="home-trending-post">
-    <div class="container text-center max-width-840">
+    <div class="container text-center">
       <h2 class="heading">
         <span class="inner border-only-bottom">Trending Post</span>
       </h2>
-      <div class="row all-post mt-5">
-        <div class="col-md-6">
-          <div class="single-post mb-4">
-            <a href="./inner-page.html">
-              <img src="assets/images/trending-post-1.jpg" alt="" class="img-fluid">
+      <div class="row all-post mt-5 justify-content-center">
+        <div class="col-md-5">
+          <div class="card mb-4 border-0">
+            <a href="./blog-details.html">
+              <img src="assets/images/trending-post-1.jpg" alt="" class="card-img-top">
             </a>
-            <p class="category-name line-height-14">
-              <a href="#">
-                <span class="text-uppercase">photography</span>
-              </a>
-            </p>
-            <h3 class="post-title">
-              <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
-            </h3>
-            <p class="post-description mb-3">
-              Lorem ipsum dolor amet, consectetur adipisg. <br>
-              neron euismod adipiscing et vel. Adipiscing posuere
-            </p>
-            <p class="post-meta">
-              <i class="fas fa-calendar-alt"></i>
-              <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
-              <i class="fas fa-clock"></i>
-              <span class="font-size-14 line-height-14">10 Min To Read</span>
-            </p>
+            <div class="card-body">
+              <p class="category-name line-height-14">
+                <a href="#">
+                  <span class="text-uppercase">photography</span>
+                </a>
+              </p>
+              <h3 class="card-title">
+                <a href="./blog-details.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
+              </h3>
+              <p class="card-text mb-3">
+                Lorem ipsum dolor amet, consectetur adipisg. <br>
+                neron euismod adipiscing et vel. Adipiscing posuere
+              </p>
+              <p class="post-meta">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
+                <i class="fas fa-clock"></i>
+                <span class="font-size-14 line-height-14">10 Min To Read</span>
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-6">
-          <div class="single-post mb-4">
-            <a href="./inner-page.html">
-              <img src="assets/images/trending-post-2.jpg" alt="" class="img-fluid">
+        <div class="col-md-5">
+          <div class="card mb-4 border-0">
+            <a href="./blog-details.html">
+              <img src="assets/images/trending-post-2.jpg" alt="" class="card-img-top">
             </a>
-            <p class="category-name line-height-14">
-              <a href="#">
-                <span class="text-uppercase">photography</span>
-              </a>
-            </p>
-            <h3 class="post-title">
-              <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
-            </h3>
-            <p class="post-description mb-3">
-              Lorem ipsum dolor amet, consectetur adipisg. <br>
-              neron euismod adipiscing et vel. Adipiscing posuere
-            </p>
-            <p class="post-meta">
-              <i class="fas fa-calendar-alt"></i>
-              <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
-              <i class="fas fa-clock"></i>
-              <span class="font-size-14 line-height-14">10 Min To Read</span>
-            </p>
+            <div class="card-body">
+              <p class="category-name line-height-14">
+                <a href="#">
+                  <span class="text-uppercase">photography</span>
+                </a>
+              </p>
+              <h3 class="card-title">
+                <a href="./blog-details.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
+              </h3>
+              <p class="card-text mb-3">
+                Lorem ipsum dolor amet, consectetur adipisg. <br>
+                neron euismod adipiscing et vel. Adipiscing posuere
+              </p>
+              <p class="post-meta">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
+                <i class="fas fa-clock"></i>
+                <span class="font-size-14 line-height-14">10 Min To Read</span>
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-6">
-          <div class="single-post mb-4">
-            <a href="./inner-page.html">
-              <img src="assets/images/trending-post-3.jpg" alt="" class="img-fluid">
+        <div class="col-md-5">
+          <div class="card mb-4 border-0">
+            <a href="./blog-details.html">
+              <img src="assets/images/trending-post-3.jpg" alt="" class="card-img-top">
             </a>
-            <p class="category-name line-height-14">
-              <a href="#">
-                <span class="text-uppercase">photography</span>
-              </a>
-            </p>
-            <h3 class="post-title">
-              <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
-            </h3>
-            <p class="post-description mb-3">
-              Lorem ipsum dolor amet, consectetur adipisg. <br>
-              neron euismod adipiscing et vel. Adipiscing posuere
-            </p>
-            <p class="post-meta">
-              <i class="fas fa-calendar-alt"></i>
-              <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
-              <i class="fas fa-clock"></i>
-              <span class="font-size-14 line-height-14">10 Min To Read</span>
-            </p>
+            <div class="card-body">
+              <p class="category-name line-height-14">
+                <a href="#">
+                  <span class="text-uppercase">photography</span>
+                </a>
+              </p>
+              <h3 class="card-title">
+                <a href="./blog-details.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
+              </h3>
+              <p class="card-text mb-3">
+                Lorem ipsum dolor amet, consectetur adipisg. <br>
+                neron euismod adipiscing et vel. Adipiscing posuere
+              </p>
+              <p class="post-meta">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
+                <i class="fas fa-clock"></i>
+                <span class="font-size-14 line-height-14">10 Min To Read</span>
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-6">
-          <div class="single-post mb-4">
-            <a href="./inner-page.html">
-              <img src="assets/images/trending-post-4.jpg" alt="" class="img-fluid">
+        <div class="col-md-5">
+          <div class="card mb-4 border-0">
+            <a href="./blog-details.html">
+              <img src="assets/images/trending-post-4.jpg" alt="" class="card-img-top">
             </a>
-            <p class="category-name line-height-14">
-              <a href="#">
-                <span class="text-uppercase">photography</span>
-              </a>
-            </p>
-            <h3 class="post-title">
-              <a href="./inner-page.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
-            </h3>
-            <p class="post-description mb-3">
-              Lorem ipsum dolor amet, consectetur adipisg. <br>
-              neron euismod adipiscing et vel. Adipiscing posuere
-            </p>
-            <p class="post-meta">
-              <i class="fas fa-calendar-alt"></i>
-              <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
-              <i class="fas fa-clock"></i>
-              <span class="font-size-14 line-height-14">10 Min To Read</span>
-            </p>
+            <div class="card-body">
+              <p class="category-name line-height-14">
+                <a href="#">
+                  <span class="text-uppercase">photography</span>
+                </a>
+              </p>
+              <h3 class="card-title">
+                <a href="./blog-details.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
+              </h3>
+              <p class="card-text mb-3">
+                Lorem ipsum dolor amet, consectetur adipisg. <br>
+                neron euismod adipiscing et vel. Adipiscing posuere
+              </p>
+              <p class="post-meta">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
+                <i class="fas fa-clock"></i>
+                <span class="font-size-14 line-height-14">10 Min To Read</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -229,7 +237,7 @@
   <!-- trending post end -->
 
   <!-- insta image start -->
-  <section class="home-insta-profile">
+  <section class="instagram-profile">
     <div class="container-fluid">
       <h2 class="heading text-center">
         <span class="inner border-only-bottom">Instagram Post</span>
@@ -260,7 +268,7 @@
               <a class="nav-link" href="#">Category</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="./contact.html">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Author</a>
@@ -296,10 +304,10 @@
   <!-- bootstrap js -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- instagram feed js -->
   <script src="assets/js/platform.js"></script>
   <!-- custom js -->
-  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/all.js"></script>
 </body>
 </html>
