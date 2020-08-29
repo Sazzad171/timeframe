@@ -46,8 +46,8 @@ h4 {
   color: $deepBlack;
 }
 .btn {
-  background: $deepBlack;
-  color: #fff !important;
+  background: none;
+  color: $deepBlack;
 }
 .btn:focus {
   box-shadow: none;
@@ -55,6 +55,11 @@ h4 {
 form .btn {
   border-radius: 2px;
   border: 1px solid #000;
+  padding: 9px 25px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff !important;
+  background: $deepBlack;
 }
 form .btn:hover {
   color: $deepBlack !important;
@@ -443,10 +448,6 @@ form .btn:hover {
   .container {
     max-width: 900px;
   }
-  .heading {
-    line-height: 43px;
-    color: #003135;
-  }
   .form-group {
     margin-bottom: 2rem;
     label {
@@ -457,13 +458,30 @@ form .btn:hover {
     .form-control {
       border: none;
       border-bottom: 1px solid $normalAsh;
-      padding: 12px 0;
+      padding: 8px 0px 12px;
     }
   }
 }
 .contact-page-block {
+  max-width: 900px;
   padding: 40px;
   border-top: 1px solid $normalAsh;
+  .heading {
+    line-height: 43px;
+    color: #003135;
+  }
+}
+// address info start
+.address {
+  font-size: 18px;
+  line-height: 28px;
+}
+// google map start
+.contact-google-map {
+  iframe {
+    width: 100%;
+    min-height: 360px;
+  }
 }
 // contact page end
 
