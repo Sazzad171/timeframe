@@ -14,6 +14,11 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <!-- overlay for search start -->
+  <div id="search-overlay" class="position-fixed" onclick="hideSearchBar()">
+  </div>
+  <!-- overlay for search end -->
+
   <!-- full full banner start -->
   <section class="home-banner">
     <!-- navbar start -->
@@ -29,8 +34,8 @@
             
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item mr-4 dropdown">
-                <a class="nav-link mr- dropdown-toggle" href="#" id="navbarDropdown" role="button" data-hover="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li class="nav-item dropdown">
+                <a class="nav-link mr-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-hover="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Home
                 </a>
                 <div class="dropdown-menu border-0 rounded-0" aria-labelledby="navbarDropdown">
@@ -56,7 +61,7 @@
                 </a>
                 <div class="dropdown-menu border-0 rounded-0" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="./blog-details.html">Blog Details</a>
-                  <a class="dropdown-item" href="./portfolio1.html">Portfolio One</a>
+                  <a class="dropdown-item" href="./portfolio.html">Portfolio</a>
                   <a class="dropdown-item" href="./privacy.html">Privacy</a>
                 </div>
               </li>
@@ -91,12 +96,13 @@
     <!-- banner inner part start -->
     <div class="banner-inner">
       <div class="container">
-        <h1 class="heading text-center mb-4">I’m a Freelance Interactive Art Director
-           based in Cuba. Focus across branding
-            identity and solution In Society
-        </h1>
-        <div class="social-icon text-center">
-          <ul class="list-unstyled mb-0">
+        <div class="row justify-content-center">
+          <div class="col-md-9">
+            <h1 class="heading text-center mb-4">I’m a Freelance Interactive Art Director
+              based in Cuba. Focus across branding
+               identity and solution In Society
+           </h1>
+           <ul class="social-icon list-unstyled mb-0 text-center">
             <li class="d-inline-block">
               <a href="#" class="d-block text-center"><i class="fab fa-facebook"></i> </a>
             </li>
@@ -110,6 +116,7 @@
               <a href="#" class="d-block text-center"><i class="fab fa-skype"></i></a>
             </li>
           </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -130,23 +137,21 @@
               <img src="assets/images/trending-post-1.jpg" alt="" class="card-img-top">
             </a>
             <div class="card-body">
-              <p class="category-name line-height-14">
-                <a href="#">
-                  <span class="text-uppercase">photography</span>
-                </a>
-              </p>
+              <a href="#" class="category-name">
+                <span class="text-uppercase">photography</span>
+              </a>
               <h3 class="card-title">
                 <a href="./blog-details.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
               </h3>
-              <p class="card-text mb-3">
-                Lorem ipsum dolor amet, consectetur adipisg. <br>
+              <p class="card-text mb-3 px-3">
+                Lorem ipsum dolor amet, consectetur adipisg.
                 neron euismod adipiscing et vel. Adipiscing posuere
               </p>
               <p class="post-meta">
                 <i class="fas fa-calendar-alt"></i>
-                <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
+                <small class="mr-3">06/12/18</small>
                 <i class="fas fa-clock"></i>
-                <span class="font-size-14 line-height-14">10 Min To Read</span>
+                <small class="">10 Min To Read</small>
               </p>
             </div>
           </div>
@@ -158,23 +163,21 @@
               <img src="assets/images/trending-post-2.jpg" alt="" class="card-img-top">
             </a>
             <div class="card-body">
-              <p class="category-name line-height-14">
-                <a href="#">
-                  <span class="text-uppercase">photography</span>
-                </a>
-              </p>
+              <a href="#" class="category-name">
+                <span class="text-uppercase">photography</span>
+              </a>
               <h3 class="card-title">
                 <a href="./blog-details.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
               </h3>
-              <p class="card-text mb-3">
-                Lorem ipsum dolor amet, consectetur adipisg. <br>
+              <p class="card-text mb-3 px-3">
+                Lorem ipsum dolor amet, consectetur adipisg.
                 neron euismod adipiscing et vel. Adipiscing posuere
               </p>
               <p class="post-meta">
                 <i class="fas fa-calendar-alt"></i>
-                <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
+                <small class="mr-3">06/12/18</small>
                 <i class="fas fa-clock"></i>
-                <span class="font-size-14 line-height-14">10 Min To Read</span>
+                <small class="">10 Min To Read</small>
               </p>
             </div>
           </div>
@@ -186,23 +189,21 @@
               <img src="assets/images/trending-post-3.jpg" alt="" class="card-img-top">
             </a>
             <div class="card-body">
-              <p class="category-name line-height-14">
-                <a href="#">
-                  <span class="text-uppercase">photography</span>
-                </a>
-              </p>
+              <a href="#" class="category-name">
+                <span class="text-uppercase">photography</span>
+              </a>
               <h3 class="card-title">
                 <a href="./blog-details.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
               </h3>
-              <p class="card-text mb-3">
-                Lorem ipsum dolor amet, consectetur adipisg. <br>
+              <p class="card-text mb-3 px-3">
+                Lorem ipsum dolor amet, consectetur adipisg.
                 neron euismod adipiscing et vel. Adipiscing posuere
               </p>
               <p class="post-meta">
                 <i class="fas fa-calendar-alt"></i>
-                <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
+                <small class="mr-3">06/12/18</small>
                 <i class="fas fa-clock"></i>
-                <span class="font-size-14 line-height-14">10 Min To Read</span>
+                <small class="">10 Min To Read</small>
               </p>
             </div>
           </div>
@@ -214,23 +215,21 @@
               <img src="assets/images/trending-post-4.jpg" alt="" class="card-img-top">
             </a>
             <div class="card-body">
-              <p class="category-name line-height-14">
-                <a href="#">
-                  <span class="text-uppercase">photography</span>
-                </a>
-              </p>
+              <a href="#" class="category-name">
+                <span class="text-uppercase">photography</span>
+              </a>
               <h3 class="card-title">
                 <a href="./blog-details.html">Lorem ipsum dolor sit amvkt, consectetur adipiscing elit In nuld</a>
               </h3>
-              <p class="card-text mb-3">
-                Lorem ipsum dolor amet, consectetur adipisg. <br>
+              <p class="card-text mb-3 px-3">
+                Lorem ipsum dolor amet, consectetur adipisg.
                 neron euismod adipiscing et vel. Adipiscing posuere
               </p>
               <p class="post-meta">
                 <i class="fas fa-calendar-alt"></i>
-                <span class="mr-3 font-size-14 line-height-14">06/12/18</span>
+                <small class="mr-3">06/12/18</small>
                 <i class="fas fa-clock"></i>
-                <span class="font-size-14 line-height-14">10 Min To Read</span>
+                <small class="">10 Min To Read</small>
               </p>
             </div>
           </div>
@@ -241,7 +240,7 @@
   <!-- trending post end -->
 
   <!-- insta image start -->
-  <section class="instagram-profile">
+  <section class="instagram-feed">
     <div class="container-fluid">
       <h2 class="heading text-center">
         <span class="inner border-only-bottom">Instagram Post</span>

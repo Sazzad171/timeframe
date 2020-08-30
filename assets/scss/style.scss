@@ -45,6 +45,11 @@ h4 {
   font-size: 18px;
   color: $deepBlack;
 }
+small {
+  font-size: 14px;
+  line-height: 14px;
+  color: #999999;
+}
 .btn {
   background: none;
   color: $deepBlack;
@@ -55,7 +60,7 @@ h4 {
 form .btn {
   border-radius: 2px;
   border: 1px solid #000;
-  padding: 9px 25px;
+  padding: 12px 30px;
   font-size: 15px;
   line-height: 18px;
   color: #fff !important;
@@ -110,6 +115,18 @@ form .btn:hover {
   line-height: 18px;
   font-weight: 450;
 }
+.dropdown-menu {
+  left: -45px;
+  box-shadow: 0px 2px 8px 0px #ccc;
+}
+#search-overlay {
+  background: #0000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
 
 
 // home page start
@@ -155,7 +172,6 @@ form .btn:hover {
     .heading {
       line-height: 58px;
       font-size: 41px;
-      padding: 0 10rem;
     }
     .social-icon {
       li {
@@ -166,7 +182,7 @@ form .btn:hover {
           width: 35px;
           background: $normalBlack;
           border-radius: 50px;
-          margin: 5px;
+          margin: 0 5px;
           line-height: 34px;
         }
       }
@@ -184,41 +200,41 @@ form .btn:hover {
   }
   .card {
     .category-name {
-      font-size: 13px;
-      margin: 4px 0 20px;
-      a {
-        color: #999999 !important;
-      }
+      color: #999999 !important;
       span {
         border-bottom: 1px solid #CBCBCB;
         padding-bottom: 4px;
+        font-size: 13px;
       }
     }
-    .post-description {
-      color: #999999;
+    .card-title {
+      margin: 15px 0 10px;
     }
     .post-meta {
       i {
         color: $deepBlack;
         margin-right: 2px;
       }
-      span {
-        color: #999999;
-      }
     }
   }
 }
 
 // insta image profile start
-.instagram-profile {
+.instagram-feed {
   .heading {
     line-height: 32px;
     span {
-      padding-bottom: 5px;
+      padding-bottom: 8px;
     }
   }
   .all-post {
-    margin: 1.5rem 0 4rem;
+    margin: 2.4rem 0 4rem;
+  }
+  .eapps-instagram-feed {
+    padding: 0;
+  }
+  .eapps-instagram-feed-posts-item-template-classic {
+    border: none;
   }
 }
 
@@ -260,6 +276,10 @@ form .btn:hover {
       color: #ADADAD;
       a {
         color: #ADADAD !important;
+        transition: 0.5s;
+      }
+      a:hover {
+        color: $normalBlack !important;
       }
     }
   }
@@ -293,27 +313,25 @@ form .btn:hover {
     .inner {
       width: 615px;
       background: #fff;
-      padding: 25px 70px;
+      padding: 52px 70px;
       .category-name {
         font-size: 13px;
-        margin: 20px 0;
-        span {
-          padding-bottom: 4px;
-        } 
-        span a {
+        padding-bottom: 6px;
+        a {
           color: #999999 !important;
         }
       }
+      .post-title {
+        margin: 15px 0 18px;
+      }
       .post-description {
         color: #999999;
+        padding: 0 50px;
       }
       .post-meta {
         i {
           color: $deepBlack;
           margin-right: 2px;
-        }
-        span {
-          color: #999999;
         }
       }
       .btn {
@@ -334,30 +352,28 @@ form .btn:hover {
   }
   .text-part {
       background: #fff;
-      padding: 25px 30px;
+      padding: 30px 30px;
       margin-left: -120px;
       margin-top: 2rem;
       .category-name {
         font-size: 13px;
-        margin: 20px 0;
-        span {
-          padding-bottom: 4px;
-          color: #999999;
+        padding-bottom: 6px;
+        a {
+          color: #999999 !important;
         }
       }
       .post-title {
         line-height: 34px;
+        margin: 13px 0 16px;
       }
       .post-description {
         color: #999999;
+        padding: 0 50px;
       }
       .post-meta {
         i {
           color: $deepBlack;
           margin-right: 2px;
-        }
-        span {
-          color: #999999;
         }
       }
       .btn {
@@ -383,9 +399,6 @@ form .btn:hover {
     .post-meta {
       i {
         color: $deepBlack;
-      }
-      span {
-        color: #999999;
       }
     }
     .quotes {
@@ -485,6 +498,52 @@ form .btn:hover {
 }
 // contact page end
 
+// privacy page start
+.privacy-policy {
+  margin: 2rem 0 3.5rem;
+  .container {
+    max-width: 840px;
+    .heading {
+      span {
+        padding-bottom: 12px;
+      }
+    }
+    .block {
+      margin-top: 50px;
+      .title {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  ul {
+    color: $deepBlack;
+  }
+}
+// privacy page end
+
+// portfolio start
+.portfolio-images {
+  .container {
+    max-width: 1040px;
+  }
+  .heading {
+    span {
+      padding-bottom: 12px;
+    }
+  }
+  .row {
+    padding: 2rem 0 3.1rem;
+  }
+  .col-md-4 {
+    padding: 0 15px;
+  }
+  img {
+    margin-bottom: 30px;
+  }
+}
+// portfolio end
+
+
 // custom media query
 // below 1200px 
 @media (max-width: 1199px) {
@@ -492,14 +551,7 @@ form .btn:hover {
 }
 // below 992px 
 @media (max-width: 991px) {
-  // home1
-  .home-banner {
-    .banner-inner {
-      .heading {
-        padding: 0;
-      }
-    }
-  }
+
 }
 // below 768px 
 @media (max-width: 767px) {
@@ -532,9 +584,6 @@ form .btn:hover {
   .home-banner {
     .banner-inner {
       padding: 40px 0 40px;
-      .heading {
-        font-size: 30px;
-      }
     }
   }
 

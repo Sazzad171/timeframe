@@ -45,6 +45,12 @@ h4 {
   color: #222222;
 }
 
+small {
+  font-size: 14px;
+  line-height: 14px;
+  color: #999999;
+}
+
 .btn {
   background: none;
   color: #222222;
@@ -58,7 +64,7 @@ h4 {
 form .btn {
   border-radius: 2px;
   border: 1px solid #000;
-  padding: 9px 25px;
+  padding: 12px 30px;
   font-size: 15px;
   line-height: 18px;
   color: #fff !important;
@@ -142,6 +148,21 @@ form .btn:hover {
   font-weight: 450;
 }
 
+.dropdown-menu {
+  left: -45px;
+  -webkit-box-shadow: 0px 2px 8px 0px #ccc;
+          box-shadow: 0px 2px 8px 0px #ccc;
+}
+
+#search-overlay {
+  background: #0000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
 .home-banner {
   background: url("../images/home-hero-bg.png");
   background-repeat: no-repeat;
@@ -191,7 +212,6 @@ form .btn:hover {
 .home-banner .banner-inner .heading {
   line-height: 58px;
   font-size: 41px;
-  padding: 0 10rem;
 }
 
 .home-banner .banner-inner .social-icon li a {
@@ -201,7 +221,7 @@ form .btn:hover {
   width: 35px;
   background: #333333;
   border-radius: 50px;
-  margin: 5px;
+  margin: 0 5px;
   line-height: 34px;
 }
 
@@ -214,21 +234,17 @@ form .btn:hover {
 }
 
 .home-trending-post .card .category-name {
-  font-size: 13px;
-  margin: 4px 0 20px;
-}
-
-.home-trending-post .card .category-name a {
   color: #999999 !important;
 }
 
 .home-trending-post .card .category-name span {
   border-bottom: 1px solid #CBCBCB;
   padding-bottom: 4px;
+  font-size: 13px;
 }
 
-.home-trending-post .card .post-description {
-  color: #999999;
+.home-trending-post .card .card-title {
+  margin: 15px 0 10px;
 }
 
 .home-trending-post .card .post-meta i {
@@ -236,20 +252,24 @@ form .btn:hover {
   margin-right: 2px;
 }
 
-.home-trending-post .card .post-meta span {
-  color: #999999;
-}
-
-.instagram-profile .heading {
+.instagram-feed .heading {
   line-height: 32px;
 }
 
-.instagram-profile .heading span {
-  padding-bottom: 5px;
+.instagram-feed .heading span {
+  padding-bottom: 8px;
 }
 
-.instagram-profile .all-post {
-  margin: 1.5rem 0 4rem;
+.instagram-feed .all-post {
+  margin: 2.4rem 0 4rem;
+}
+
+.instagram-feed .eapps-instagram-feed {
+  padding: 0;
+}
+
+.instagram-feed .eapps-instagram-feed-posts-item-template-classic {
+  border: none;
 }
 
 .footer {
@@ -298,6 +318,12 @@ form .btn:hover {
 
 .footer .bottom-footer p a {
   color: #ADADAD !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .bottom-footer p a:hover {
+  color: #333333 !important;
 }
 
 .home2-full-header .nav-logo {
@@ -328,33 +354,30 @@ form .btn:hover {
 .home2-banner .text-part .inner {
   width: 615px;
   background: #fff;
-  padding: 25px 70px;
+  padding: 52px 70px;
 }
 
 .home2-banner .text-part .inner .category-name {
   font-size: 13px;
-  margin: 20px 0;
+  padding-bottom: 6px;
 }
 
-.home2-banner .text-part .inner .category-name span {
-  padding-bottom: 4px;
-}
-
-.home2-banner .text-part .inner .category-name span a {
+.home2-banner .text-part .inner .category-name a {
   color: #999999 !important;
+}
+
+.home2-banner .text-part .inner .post-title {
+  margin: 15px 0 18px;
 }
 
 .home2-banner .text-part .inner .post-description {
   color: #999999;
+  padding: 0 50px;
 }
 
 .home2-banner .text-part .inner .post-meta i {
   color: #222222;
   margin-right: 2px;
-}
-
-.home2-banner .text-part .inner .post-meta span {
-  color: #999999;
 }
 
 .home2-banner .text-part .inner .btn {
@@ -375,36 +398,33 @@ form .btn:hover {
 
 .home2-blogs .text-part {
   background: #fff;
-  padding: 25px 30px;
+  padding: 30px 30px;
   margin-left: -120px;
   margin-top: 2rem;
 }
 
 .home2-blogs .text-part .category-name {
   font-size: 13px;
-  margin: 20px 0;
+  padding-bottom: 6px;
 }
 
-.home2-blogs .text-part .category-name span {
-  padding-bottom: 4px;
-  color: #999999;
+.home2-blogs .text-part .category-name a {
+  color: #999999 !important;
 }
 
 .home2-blogs .text-part .post-title {
   line-height: 34px;
+  margin: 13px 0 16px;
 }
 
 .home2-blogs .text-part .post-description {
   color: #999999;
+  padding: 0 50px;
 }
 
 .home2-blogs .text-part .post-meta i {
   color: #222222;
   margin-right: 2px;
-}
-
-.home2-blogs .text-part .post-meta span {
-  color: #999999;
 }
 
 .home2-blogs .text-part .btn i {
@@ -528,10 +548,48 @@ form .btn:hover {
   min-height: 360px;
 }
 
-@media (max-width: 991px) {
-  .home-banner .banner-inner .heading {
-    padding: 0;
-  }
+.privacy-policy {
+  margin: 2rem 0 3.5rem;
+}
+
+.privacy-policy .container {
+  max-width: 840px;
+}
+
+.privacy-policy .container .heading span {
+  padding-bottom: 12px;
+}
+
+.privacy-policy .container .block {
+  margin-top: 50px;
+}
+
+.privacy-policy .container .block .title {
+  margin-bottom: 15px;
+}
+
+.privacy-policy ul {
+  color: #222222;
+}
+
+.portfolio-images .container {
+  max-width: 1040px;
+}
+
+.portfolio-images .heading span {
+  padding-bottom: 12px;
+}
+
+.portfolio-images .row {
+  padding: 2rem 0 3.1rem;
+}
+
+.portfolio-images .col-md-4 {
+  padding: 0 15px;
+}
+
+.portfolio-images img {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -553,9 +611,6 @@ form .btn:hover {
 @media (max-width: 575px) {
   .home-banner .banner-inner {
     padding: 40px 0 40px;
-  }
-  .home-banner .banner-inner .heading {
-    font-size: 30px;
   }
   .home2-banner .text-part {
     margin-top: 0;
