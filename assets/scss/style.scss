@@ -98,15 +98,6 @@ form .btn:hover {
 .border-bottom-category-name {
   border-bottom: 1px solid #777777;
 }
-.line-height-14 {
-  line-height: 14px;
-}
-.line-height-16 {
-  line-height: 16px;
-}
-.font-size-14 {
-  font-size: 14px;
-}
 .dropdown-item:active {
   background-color: #fff !important;
 }
@@ -192,7 +183,7 @@ form .btn:hover {
 
 // trending post start
 .home-trending-post {
-  padding: 60px 0;
+  padding: 60px 0 0;
   .heading {
     span {
       padding-bottom: 5px;
@@ -221,6 +212,7 @@ form .btn:hover {
 
 // insta image profile start
 .instagram-feed {
+  margin-top: 60px;
   .heading {
     line-height: 32px;
     span {
@@ -272,6 +264,7 @@ form .btn:hover {
   .bottom-footer {
     border-top: 1px solid #DEDEDE;
     p {
+      font-size: 14px;
       line-height: 15px;
       color: #ADADAD;
       a {
@@ -391,7 +384,7 @@ form .btn:hover {
     max-width: 900px;
   }
   .blog-body {
-    padding: 50px 65px 38px;
+    padding: 50px 65px 0;
     .post-title {
       font-size: 30px;
       line-height: 46px;
@@ -433,6 +426,7 @@ form .btn:hover {
     }
     span {
       background: #fff;
+      font-size: 14px;
     }
   }
   .comments-reply {
@@ -440,6 +434,7 @@ form .btn:hover {
     form {
       .form-check-label {
         line-height: 17px;
+        font-size: 14px;
       }
     }
   }
@@ -532,7 +527,7 @@ form .btn:hover {
     }
   }
   .row {
-    padding: 2rem 0 3.1rem;
+    padding-top: 2rem;
   }
   .col-md-4 {
     padding: 0 15px;
@@ -540,8 +535,98 @@ form .btn:hover {
   img {
     margin-bottom: 30px;
   }
+  .portfolio-image {
+    .hidden-tag {
+      opacity: 0;
+      top: 18px;
+      right: 20px;
+      left: 20px;
+      padding: 20px 22px;
+      background: rgba(0, 0, 0, 0.8);
+      transition: 0.5s;
+      .title {
+        color: #fff;
+        margin-bottom: 15px;
+      }
+      .description {
+        color: #c6c6c6;
+      }
+    }
+  }
+  .portfolio-image:hover .hidden-tag {
+    opacity: 1;
+  }
 }
 // portfolio end
+
+// portfolio details start
+.portfolio-details {
+  margin-bottom: 30px;
+  .container {
+    max-width: 980px;
+  }
+  .heading {
+    span {
+      padding-bottom: 12px;
+    }
+  }
+  .description {
+    margin: 32px 0 30px;
+  }
+  img {
+    margin-bottom: 30px;
+  }
+}
+// portfolio details end
+
+// about start
+.about  {
+  .container {
+    max-width: 740px;
+  }
+  .title {
+    line-height: 42px;
+    margin: 30px 0 15px;
+  }
+  .skills {
+    margin: 50px 0;
+    padding: 66px 0;
+    background: #fbfbfb;
+    .skill-round {
+      margin-bottom: 35px;
+      .inner {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(34, 34, 34, 0.04);
+        width: 160px;
+        height: 160px;
+        i {
+          color: $deepBlack;
+          font-size: 35px;
+        }
+      }
+    }
+    .skill-label {
+      color: $normalBlack;
+    }
+  }
+  .facts {
+    .heading {
+      margin-bottom: 2rem;
+      span {
+        padding-bottom: 12px;
+      }
+    }
+    .fact-item {
+      padding: 18px 0;
+      color: $normalBlack;
+      border-bottom: 1px solid #dddddd;
+    }
+    .fact-item:last-child {
+      border-bottom: none;
+    }
+  }
+}
+// about end
 
 
 // custom media query
@@ -593,6 +678,9 @@ form .btn:hover {
       margin-top: 0;
       .inner {
         padding: 25px 0px;
+        .post-description {
+          padding: 0;
+        }
       }
     }
   }
@@ -603,9 +691,10 @@ form .btn:hover {
       }
     }
   }
-  .home2-single-post {
+  .home2-blogs {
     .text-part {
-      padding: 25px 0;
+      margin-left: 0;
+      padding: 0;
     }
   }
 
