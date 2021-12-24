@@ -129,14 +129,23 @@
   
         <div class="comments-reply">
           <p class="comment-heading text-uppercase mb-3">leave a reply</p>
-          <form>
+          <form class="needs-validation" novalidate>
             <textarea class="form-control" name="" rows="10" required></textarea>
+            <div class="invalid-feedback">
+              Please write your reply.
+            </div>
             <div class="row">
               <div class="col-md-4">
                 <input class="form-control my-4" type="text" placeholder="Name" required>
+                <div class="invalid-feedback">
+                  Please write your name.
+                </div>
               </div>
               <div class="col-md-4">
                 <input class="form-control my-4" type="text" placeholder="Email" required>
+                <div class="invalid-feedback">
+                  Please write your email.
+                </div>
               </div>
               <div class="col-md-4">
                 <input class="form-control my-4" type="text" placeholder="Website" required>

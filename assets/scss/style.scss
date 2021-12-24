@@ -94,6 +94,12 @@ form .btn:hover {
   background-color: $deepBlack;
   border-color: $deepBlack;
 }
+.was-validated .form-control:invalid:focus {
+  box-shadow: none;
+}
+.was-validated .form-control:valid:focus {
+  box-shadow: none;
+}
 .border-solid-black {
   border: 1px solid $deepBlack;
 }
@@ -146,6 +152,10 @@ form .btn:hover {
       padding: 6px 0;
       margin-top: 2px;
       cursor: pointer;
+      @include for-tablet {    
+        width: 33px;
+        height: 33px;
+     }
       .input-group {
         background: #fff;
         padding: 5px;
@@ -157,6 +167,9 @@ form .btn:hover {
         right: 0;
         top: 45px;
         width: 280px;
+        @include for-tablet {    
+          left: 0;
+       }
       }
       #hiddenSeacrh {
         display: none;
@@ -165,6 +178,9 @@ form .btn:hover {
   }
   .banner-inner {
     padding: 60px 0 75px;
+    @include for-phone {    
+      padding: 40px 0 40px;
+    }
     .heading {
       line-height: 58px;
       font-size: 41px;
@@ -308,10 +324,19 @@ form .btn:hover {
   }
   .text-part {
     margin-top: -120px;
+    @include for-tablet {    
+      margin: 0;
+    }
+    @include for-phone {    
+      margin-top: 0;
+    }
     .inner {
       width: 615px;
       background: #fff;
       padding: 52px 70px;
+      @include for-phone {    
+        padding: 25px 0;
+      }
       .category {
         font-size: 13px;
         padding-bottom: 6px;
@@ -350,11 +375,19 @@ form .btn:hover {
   }
   .upper {
     margin-left: -140px;
+    @include for-tablet {    
+      margin-left: 0;
+      padding: 0;
+    }
   }
   .blog-content {
       background: #fff;
       padding: 30px;
       margin-top: 2rem;
+      @include for-tablet {    
+        margin-top: 0;
+        padding: 30px 0 0 ;
+      }
       .category {
         font-size: 13px;
         padding-bottom: 6px;
@@ -701,6 +734,9 @@ form .btn:hover {
   }
   .blog-content {
     margin-top: -120px;
+    @include for-tablet {    
+      margin: 0;
+    }
     .inner {
       width: 615px;
       background: #fff;
@@ -737,11 +773,19 @@ form .btn:hover {
   }
   .upper {
     margin-left: -140px;
+    @include for-tablet {    
+      margin-left: 0;
+      padding: 0;
+    }
   }
   .blog-content {
       background: #fff;
       padding: 45px 30px;
       margin-top: 2.5rem;
+      @include for-tablet {    
+        margin-top: 0;
+        padding: 30px 0 0;
+      }
       .category {
         font-size: 13px;
         padding-bottom: 6px;
@@ -792,68 +836,14 @@ form .btn:hover {
 }
 // category page end
 
-
-// custom media query
-// below 1200px 
-@media (max-width: 1199px) {
-
+// media query with mixin
+@mixin for-tablet {
+  @media (max-width: 767px) { @content; }
 }
-// below 992px 
-@media (max-width: 991px) {
-
+@mixin for-phone {
+  @media (max-width: 575px) { @content; }
 }
-// below 768px 
-@media (max-width: 767px) {
-  // home1
-  .home-banner {
-    .full-header {
-      .nav-search {
-        width: 33px;
-        height: 33px;
-        .hidden-search {
-          left: 0;
-        }
-      }
-    }
-  }
 
-  // home2
-  .home2-banner {
-    .row {
-      margin-bottom: 0 !important;
-    }
-    .text-part {
-      margin: 0;
-    }
-  }
-  .home2-blogs {
-    .upper {
-      margin-left: 0;
-      padding: 0;
-    }
-    .blog-content {
-      margin-top: 0;
-      padding: 30px 0 0;
-    }
-  }
-
-  // category page
-  .category-banner {
-    .blog-content {
-      margin: 0;
-    }
-  }
-  .category-blogs {
-    .upper {
-      margin-left: 0;
-      padding: 0;
-    }
-    .blog-content {
-      margin-top: 0;
-      padding: 30px 0 0;
-    }
-  }
-}
 // below 576px 
 @media (max-width: 575px) {
   // home1

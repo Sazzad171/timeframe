@@ -22,7 +22,7 @@ function hideSearchBar() {
     $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(100);
   });
 
-  // form validation with js
+  // form validation with bootstrap
   (function() {
     'use strict';
     window.addEventListener('load', function() {
